@@ -8,9 +8,9 @@ namespace Bac3_Projet_Écosystème_195030
             base("Paquerette", 10, 4, 10, 20, 50)
         {
         }
-        public override void Grow(Worldmap board)
+        public override void Grow(Worldmap map)
         {
-            board.Add(new Paquerette());
+            map.Add(new Paquerette());
         }
     }
 }
