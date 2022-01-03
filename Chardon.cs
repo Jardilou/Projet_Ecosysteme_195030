@@ -8,9 +8,9 @@ namespace Bac3_Projet_Écosystème_195030
             base("Chardon", 100, 15, 45, 65, 10)
         {
         }
-        public override void Grow(Worldmap board)
+        public override void Grow(Worldmap map)
         {
-            board.Add(new Chardon());
+            map.Add(new Chardon());
         }
     }
 }
