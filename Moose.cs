@@ -9,13 +9,13 @@ namespace Bac3_Projet_Écosystème_195030
     public class Moose : PlantEater
     {
         //params : string Name, int maxHP, int maxEnergy, int SightRadius, int ContactRadius, int damage, int MaternityRest = 0
-        public Moose(int pregnancycd = 0) :
-            base("Moose", 95, 45, 30, 12, 60, pregnancycd)
+        public Moose(int MaternityRest = 0) :
+            base("Moose", 95, 45, 30, 12, 60, MaternityRest)
         {
         }
-        public override void Reproduce(Worldmap board)
+        public override void Reproduce(Worldmap map)
         {
-            board.Add(new Moose(1000), Pos_x, Pos_y);
+            map.Add(new Moose(1000), Pos_x, Pos_y);
         }
     }
 }
