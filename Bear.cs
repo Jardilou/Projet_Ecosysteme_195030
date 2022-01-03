@@ -14,9 +14,9 @@ namespace Bac3_Projet_Écosystème_195030
             base("Bear", 600, 35, 50, 5, 200, MaternityRest)
         {
         }
-        public override void Reproduce(Worldmap board)
+        public override void Reproduce(Worldmap map)
         {
-            board.Add(new Bear(1000), Pos_x, Pos_y);
+            map.Add(new Bear(1000), Pos_x, Pos_y);
         }
     }
 }
