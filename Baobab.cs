@@ -9,9 +9,9 @@ namespace Bac3_Projet_Écosystème_195030
             base("Baobab", 500, 300, 200, 600, 500)
         {
         }
-        public override void Grow(Worldmap board)
+        public override void Grow(Worldmap map)
         {
-            board.Add(new Baobab());
+            map.Add(new Baobab());
         }
     }
 }
