@@ -15,9 +15,9 @@ namespace Bac3_Projet_Écosystème_195030
             base("Wolf", 350, 80, 100, 15, 100, MaternityRest)
         {
         }
-        public override void Reproduce(Worldmap board)
+        public override void Reproduce(Worldmap map)
         {
-            board.Add(new Wolf(1000), Pos_x, Pos_y);
+            map.Add(new Wolf(1000), Pos_x, Pos_y);
         }
     }
 }
